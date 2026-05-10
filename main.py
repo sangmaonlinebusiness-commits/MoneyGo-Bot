@@ -31,12 +31,12 @@ def send_welcome(message):
     markup = InlineKeyboardMarkup(row_width=2)
     
     # Buttons
-    btn_app = InlineKeyboardButton("🚀 Open Money Go App", web_app=WebAppInfo(url=BLOGGER_URL))
+    btn_app = InlineKeyboardButton("💰 Start Earning", web_app=WebAppInfo(url=BLOGGER_URL))
     btn_profile = InlineKeyboardButton("👤 My Profile", callback_data="profile")
     btn_refer = InlineKeyboardButton("👥 Refer & Earn", callback_data="refer")
-    btn_support = InlineKeyboardButton("🛡️ Support Group", url="https://t.me/your_channel_link")
+    btn_support = InlineKeyboardButton("🛡️ Support Group", url="https://t.me/dailymoneyfree")
     
-    # Button Layout
+    # Button Open
     markup.add(btn_app)
     markup.add(btn_profile, btn_refer)
     markup.add(btn_support)
