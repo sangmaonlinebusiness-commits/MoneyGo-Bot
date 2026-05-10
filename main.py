@@ -1,4 +1,4 @@
-th tbot
+import telebot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton, WebAppInfo
 from flask import Flask
 from threading import Thread
@@ -17,7 +17,7 @@ def run():
 
 # --- 2. BOT SETTINGS (IAO DINGTANGATBO) ---
 API_TOKEN = '8665660702:AAHoN_Fv98uPalH-xRPp9l43Ss5RpXvs3Mg'  # BotFather Token
-BLOGGER_URL = 'https://moneygo24.blogspot.com/'  # Blogger URL
+BLOGGER_URL = 'https://moneygo24.blogspot.com'  # Blogger URL
 
 bot = telebot.TeleBot(API_TOKEN)
 
@@ -31,12 +31,12 @@ def send_welcome(message):
     markup = InlineKeyboardMarkup(row_width=2)
     
     # Buttons
-    btn_app = InlineKeyboardButton("💰 Start Earning", web_app=WebAppInfo(url=BLOGGER_URL))
+    btn_app = InlineKeyboardButton("🚀 Open Money Go App", web_app=WebAppInfo(url=BLOGGER_URL))
     btn_profile = InlineKeyboardButton("👤 My Profile", callback_data="profile")
     btn_refer = InlineKeyboardButton("👥 Refer & Earn", callback_data="refer")
     btn_support = InlineKeyboardButton("🛡️ Support Group", url="https://t.me/dailymoneyfree")
     
-    # Button Open
+    # Button Layout
     markup.add(btn_app)
     markup.add(btn_profile, btn_refer)
     markup.add(btn_support)
