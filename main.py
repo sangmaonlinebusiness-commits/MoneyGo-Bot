@@ -47,7 +47,7 @@ def send_welcome(message):
         f"India's most trusted earning platform. Start completing tasks and earn real cash daily.\n\n"
         f"🆔 <b>Your ID:</b> <code>{user_id}</code>\n"
         f"📊 <b>Status:</b> Active\n\n"
-        f"<i>Click the button below to launch the App!</i>"
+        f"<i>Click the Start Earning button below to make the 💰!</i>"
     )
 
     bot.send_message(
