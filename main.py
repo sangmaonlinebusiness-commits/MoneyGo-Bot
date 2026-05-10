@@ -1,4 +1,4 @@
-import telebot
+th tbot
 from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton, WebAppInfo
 from flask import Flask
 from threading import Thread
@@ -47,7 +47,7 @@ def send_welcome(message):
         f"India's most trusted earning platform. Start completing tasks and earn real cash daily.\n\n"
         f"🆔 <b>Your ID:</b> <code>{user_id}</code>\n"
         f"📊 <b>Status:</b> Active\n\n"
-        f"<i>Click the Start Earning button below to make the 💰!</i>"
+        f"<i>Click the Start Earning button below to make money 💰!</i>"
     )
 
     bot.send_message(
